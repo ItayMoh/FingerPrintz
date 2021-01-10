@@ -83,7 +83,6 @@ class fingerprint():
         except OSError:
             print('cannot open :{}'.format(self.inputfile))
 
-
     def modeselect(self):
         if self.mode == 'u':
             self.urlextract()
@@ -91,7 +90,10 @@ class fingerprint():
             self.argumentextract()
         elif self.mode == 'd':
             self.directories()
-
+        elif self.mode == 'all':
+            self.urlextract()
+            self.argumentextract()
+            self.directories()
 
 if __name__ == "__main__": # getting some parameters from the user
     parser = ArgumentParser(description='Fingerprints urls to domains/arguments/directories')
