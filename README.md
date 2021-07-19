@@ -1,5 +1,5 @@
 # FingerPrintz
-Taking a list of urls and making appending it to a file to make unique domain/arguments/directories list, the script also checks for duplicates in the output file and will not append if there is.
+Taking a list of urls and making a unique domain/arguments/directories list, the script also checks for duplicates in the output file and will not append if there is.
 
 Usage:
 
